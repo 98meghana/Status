@@ -8,7 +8,6 @@
         filters:
           "instance-state-name": "running"
       register: ec2_instances
-
     - name: Format EC2 Instances
       set_fact:
         ec2_table: |
