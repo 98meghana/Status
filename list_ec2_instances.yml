@@ -15,8 +15,8 @@
           {% for instance in ec2_instances.instances %}
           {{ instance.id }}\t{{ instance.tags.Name if instance.tags.Name else "N/A" }}\t{{ instance.instance_type }}\t{{ instance.private_ip_address }}\t{{ instance.public_ip_address }}
           {% endfor %}
-- name: Send EC2 Instances List
-  mail:
+#- name: Send EC2 Instances List
+  #mail:
     host: 172.31.90.245
     port: 587
     username: awx
