@@ -1,6 +1,5 @@
 ---
-- name: List EC2 Instances
-  hosts: 172.31.90.245
+- hosts: 172.31.90.245
   tasks:
     - name: Get running EC2 instances
       ec2_instance_facts:
