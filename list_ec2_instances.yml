@@ -18,10 +18,10 @@
 #- name: Send EC2 Instances List
   #mail:
   host: 172.31.90.245
-    port: 587
-    username: awx
-    password: Infy@123
-    to: meghana_ch@yahoo.com
-    subject: "Daily EC2 Instance List"
-    body: "{{ ec2_table }}"
+  port: 587
+  username: awx
+  password: Infy@123
+  to: meghana_ch@yahoo.com
+  subject: "Daily EC2 Instance List"
+  body: "{{ ec2_table }}"
   delegate_to: localhost
