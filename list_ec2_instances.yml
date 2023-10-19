@@ -16,7 +16,7 @@
           {% endfor %}
 #- name: Send EC2 Instances List
   #mail:
-  host: 172.31.90.245
+  hosts: 172.31.90.245
   port: 587
   username: awx
   password: Infy@123
